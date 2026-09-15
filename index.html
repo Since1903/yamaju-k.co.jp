@@ -1,119 +1,320 @@
 <!DOCTYPE html>
-
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>山十公式リンク</title>
+
   <style>
-    body {
-      font-family: "Noto Sans JP", sans-serif;
-      background-color: #3A9D74;
-      color: #fff;
-      text-align: center;
-      margin: 0;
-      padding: 0;
+    * {
+      box-sizing: border-box;
     }
 
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+    }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 60px 36px;
-}
+    body {
+      font-family: "Noto Sans JP", "Yu Gothic", "Meiryo", sans-serif;
+      color: #ffffff;
+      text-align: center;
 
-.logo {
-  width: 160px;
-  margin-bottom: 30px;
-}
+      /* =========================================
+         背景写真 12.jpg ＋ 山十グリーン
+         ========================================= */
+      background:
+        linear-gradient(
+          rgba(58, 157, 116, 0.82),
+          rgba(58, 157, 116, 0.82)
+        ),
+        url("12.jpg");
 
-h1 {
-  font-size: 1.8em;
-  margin-bottom: 40px;
-}
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
 
-.link-button {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 90%;
-  max-width: 360px;
-  background: #ffffff;
-  color: #3A9D74;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 12px;
-  padding: 12px 20px;
-  margin: 12px 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  transition: transform 0.15s, box-shadow 0.15s;
-}
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-.link-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
-}
+      width: 100%;
+      min-height: 100vh;
 
-.link-button img {
-  width: 32px;
-  height: 32px;
-  margin-right: 16px;
-}
+      padding: 50px 24px 35px;
+    }
 
-footer {
-  margin-top: 40px;
-  font-size: 0.8em;
-  opacity: 0.8;
-}
+    /* =========================================
+       山十ロゴ
+       ========================================= */
+    .logo {
+      width: 160px;
+      max-width: 60%;
+      height: auto;
+      margin-bottom: 25px;
+    }
 
+    h1 {
+      font-size: 1.8rem;
+      margin: 0 0 35px;
+      font-weight: 700;
 
+      /* 背景写真の上でも読みやすくする */
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.20);
+    }
+
+    /* =========================================
+       リンクボタン
+       ========================================= */
+    .link-button {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      width: 90%;
+      max-width: 380px;
+
+      background: rgba(255, 255, 255, 0.96);
+      color: #3A9D74;
+
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+
+      border-radius: 12px;
+
+      padding: 13px 20px;
+      margin: 9px 0;
+
+      box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.16);
+
+      transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        background-color 0.15s ease;
+    }
+
+    .link-button:hover {
+      transform: translateY(-3px);
+
+      background: #ffffff;
+
+      box-shadow:
+        0 7px 18px rgba(0, 0, 0, 0.22);
+    }
+
+    .link-button:active {
+      transform: translateY(0);
+    }
+
+    /* SNSなどのアイコン */
+    .link-button img {
+      width: 32px;
+      height: 32px;
+
+      object-fit: contain;
+
+      margin-right: 16px;
+
+      flex-shrink: 0;
+    }
+
+    /* =========================================
+       フッター
+       ========================================= */
+    footer {
+      margin-top: 35px;
+
+      font-size: 0.8rem;
+
+      color: rgba(255, 255, 255, 0.85);
+
+      text-shadow:
+        0 1px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    /* =========================================
+       スマートフォン
+       ========================================= */
+    @media (max-width: 600px) {
+
+      body {
+        /* iPhone等ではfixedを外した方が安定 */
+        background-attachment: scroll;
+      }
+
+      .container {
+        justify-content: flex-start;
+
+        padding:
+          45px
+          18px
+          30px;
+      }
+
+      .logo {
+        width: 135px;
+      }
+
+      h1 {
+        font-size: 1.55rem;
+        margin-bottom: 28px;
+      }
+
+      .link-button {
+        width: 100%;
+        max-width: 360px;
+
+        padding: 12px 17px;
+
+        font-size: 0.95rem;
+      }
+
+      .link-button img {
+        width: 30px;
+        height: 30px;
+        margin-right: 14px;
+      }
+    }
   </style>
 </head>
+
+
 <body>
+
   <div class="container">
-    <!-- 会社ロゴ -->
-    <img src="logo.png" alt="山十ロゴ" class="logo" />
 
-<h1>山十公式リンク</h1>
+    <!-- ===============================
+         山十ロゴ
+         =============================== -->
+    <img
+      src="logo.png"
+      alt="山十株式会社 ロゴ"
+      class="logo"
+    >
 
-<!-- 各SNSリンク -->
-<a href="https://www.instagram.com/yamaju1903/" class="link-button">
-  <img src="insta.png" alt="Instagramロゴ" />
-  公式Instagram
-</a>
 
-<a href="https://www.facebook.com/Yamaju1903" class="link-button">
-  <img src="fb.png" alt="Facebookロゴ" />
-  公式Facebook
-</a>
+    <h1>山十公式リンク</h1>
 
-<a href="https://x.com/Yamaju1903" class="link-button">
-  <img src="x.png" alt="Xロゴ" />
-  公式X
-</a>
 
-<a href="https://yamaju-k.co.jp/" class="link-button">
-  <img src="hp.png" alt="ホームページロゴ" />
-  オフィシャルサイト
-</a>
+    <!-- ===============================
+         Instagram
+         =============================== -->
+    <a
+      href="https://www.instagram.com/yamaju1903/"
+      class="link-button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="insta.png"
+        alt="Instagram"
+      >
+      <span>公式Instagram</span>
+    </a>
 
-<a href="https://yamaju-recruit.com/" class="link-button">
-  <img src="YS.png" alt="採用サイトロゴ" />
-  採用サイト
-</a>
 
-<a href="https://job.mynavi.jp/27/pc/search/corp277874/outline.html" class="link-button">
-  <img src="マイナビロゴ.png" alt="マイナビロゴ" />
-  マイナビ２０２７
-</a>
+    <!-- ===============================
+         Facebook
+         =============================== -->
+    <a
+      href="https://www.facebook.com/Yamaju1903"
+      class="link-button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="fb.png"
+        alt="Facebook"
+      >
+      <span>公式Facebook</span>
+    </a>
 
-<footer>
-  © 2025 YAMAJU Co., Ltd. All Rights Reserved.
-</footer>
+
+    <!-- ===============================
+         X
+         =============================== -->
+    <a
+      href="https://x.com/Yamaju1903"
+      class="link-button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="x.png"
+        alt="X"
+      >
+      <span>公式X</span>
+    </a>
+
+
+    <!-- ===============================
+         山十公式サイト
+         =============================== -->
+    <a
+      href="https://yamaju-k.co.jp/"
+      class="link-button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="hp.png"
+        alt="山十株式会社"
+      >
+      <span>オフィシャルサイト</span>
+    </a>
+
+
+    <!-- ===============================
+         採用サイト
+         =============================== -->
+    <a
+      href="https://yamaju-recruit.com/"
+      class="link-button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="YS.png"
+        alt="山十株式会社 採用サイト"
+      >
+      <span>採用サイト</span>
+    </a>
+
+
+    <!-- ===============================
+         マイナビ2027
+         =============================== -->
+    <a
+      href="https://job.mynavi.jp/27/pc/search/corp277874/outline.html"
+      class="link-button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="マイナビロゴ.png"
+        alt="マイナビ"
+      >
+      <span>マイナビ2027</span>
+    </a>
+
+
+    <!-- ===============================
+         フッター
+         =============================== -->
+    <footer>
+      © 2026 YAMAJU Co., Ltd. All Rights Reserved.
+    </footer>
 
   </div>
+
 </body>
 </html>
-
-
