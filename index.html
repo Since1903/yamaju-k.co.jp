@@ -12,15 +12,15 @@
 :root{color-scheme:light;--green:#287e5d;--ink:#183c30}
 *{box-sizing:border-box}
 body{margin:0;background:#155640;color:var(--ink);font-family:"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;-webkit-font-smoothing:antialiased}
-body::before{content:"";position:absolute;inset:0 0 auto;height:1040px;z-index:-1;background:linear-gradient(180deg,#09231c19 0%,#0c362a42 29%,#155640d4 65%,#155640 100%),url("yamaju-sunny.webp") center top/cover no-repeat}
+body::before{content:"";position:absolute;inset:0 0 auto;height:1180px;z-index:-1;background:linear-gradient(180deg,#06251b08 0%,#063e3033 27%,#07513d9c 58%,#155640 100%),url("yamaju-sunny.webp") center top/cover no-repeat}
 a{color:inherit;text-decoration:none}
 a:focus-visible{outline:3px solid #f5cb68;outline-offset:5px}
 .container{width:min(1040px,calc(100% - 64px));margin:0 auto}
-.hero{min-height:380px;padding:42px 0 32px;color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
-.logo{display:block;width:104px;height:96px;border-radius:18px;box-shadow:0 6px 24px #102b2a24}
-.eyebrow{margin:24px 0 8px;font-size:11px;letter-spacing:.25em;font-weight:700;text-shadow:0 1px 10px #12372c}
-h1{margin:0;font-size:clamp(29px,4vw,42px);letter-spacing:.09em;line-height:1.5;text-shadow:0 2px 18px #12372c99}
-.tagline{margin:10px 0 0;font-size:14px;letter-spacing:.15em;text-shadow:0 1px 8px #12372c}
+.hero{min-height:530px;padding:56px 0 42px;color:white;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center}
+.logo{display:block;width:152px;height:140px;object-fit:contain;border-radius:20px;background:#fff;box-shadow:0 8px 32px #102b2a45}
+.eyebrow{order:2;margin:4px 0 0;font-size:12px;letter-spacing:.36em;font-weight:700;text-shadow:0 1px 10px #12372c}
+h1{order:1;margin:22px 0 0;font-size:clamp(36px,5vw,58px);letter-spacing:.09em;line-height:1.4;text-shadow:0 3px 20px #12372cbb}
+.tagline{order:3;margin:44px 0 0;font-size:clamp(21px,3vw,32px);font-weight:600;letter-spacing:.15em;text-shadow:0 2px 14px #12372c}
 section{margin-bottom:34px}
 .section-heading{display:flex;align-items:baseline;gap:13px;margin:0 0 14px;color:white}
 h2{margin:0;font-size:19px;letter-spacing:.04em}
@@ -61,11 +61,11 @@ footer p{margin:0 0 10px;font-size:13px;letter-spacing:.12em}
 footer small{font-size:10px;letter-spacing:.04em}
 @media(max-width:700px){
 .container{width:calc(100% - 36px);max-width:480px}
-body::before{height:850px;background-position:center top;background-size:auto 850px}
-.hero{min-height:318px;padding:30px 0 28px}
-.logo{width:87px;height:80px;border-radius:15px}
-.eyebrow{font-size:9px;margin-top:21px}
-.tagline{font-size:12px}
+body::before{height:900px;background-position:center top;background-size:auto 900px}
+.hero{min-height:420px;padding:34px 0 30px}
+.logo{width:112px;height:104px;border-radius:16px}
+.eyebrow{font-size:9px;margin-top:4px;letter-spacing:.25em}
+.tagline{font-size:20px;margin-top:34px}
 .grid{gap:12px}
 .sns-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 .site-grid{grid-template-columns:minmax(0,1fr)}
