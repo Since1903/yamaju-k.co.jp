@@ -134,6 +134,12 @@ footer::before{content:"⌂  ♧  ⌂  ▥  ♧  ▤  ⌂  ♧  ⌂";display:blo
 .mynavi{padding-left:30px;background:linear-gradient(95deg,#fffffffa 0%,#fffffff0 43%,#ffffffa8 100%),url("マイナビロゴ.png") 82% center/auto 145% no-repeat,#f0faff}
 .mynavi .site-icon{display:none}
 @media(max-width:700px){.mynavi{padding-left:23px}}
+
+/* Align Mynavi text with other site cards; keep watermark background */
+.mynavi{padding:27px 30px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;text-align:left}
+.mynavi h3,.mynavi p{margin-left:0;text-align:left}
+.mynavi .site-icon{display:none}
+@media(max-width:700px){.mynavi{padding:23px}}
 </style>
 </head>
 <body>
