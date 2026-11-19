@@ -106,6 +106,16 @@ section{margin-bottom:28px}
 footer{position:relative;padding-top:46px;background:linear-gradient(180deg,transparent,#003e32 80%)}
 footer::before{content:"⌂  ♧  ⌂  ▥  ♧  ▤  ⌂  ♧  ⌂";display:block;margin-bottom:14px;font-size:25px;letter-spacing:.35em;color:#d8eee5;opacity:.9}
 @media(max-width:700px){.sns-card .sns-icon{width:42px;height:42px}.future::after{width:65px;height:48px;right:34px}footer::before{font-size:16px;letter-spacing:.15em}.recruit{background-size:auto,auto 100%}}
+
+/* November link updates */
+.x{background:linear-gradient(135deg,#ffffff 0%,#ededed 42%,#a0a0a0 100%);border-color:#8d8d8d}
+.x::before{background:linear-gradient(225deg,#11111112 0 49%,#ffffff50 50% 100%)}
+.future{background:linear-gradient(120deg,#fff 0%,#f1faf7 56%,#c3e3d7 100%);border:1px solid #b4d6c9;min-height:150px;display:flex;align-items:center;justify-content:flex-start;padding:22px 64px 22px 26px}
+.future::after{display:none}
+.future h3{font-size:18px;color:#173c30;margin-bottom:8px}
+.future p{font-size:11px;line-height:1.7;color:#435d53}
+.future .site-label{color:#287e5d}
+@media(max-width:700px){.future{padding:22px 55px 22px 23px;min-height:160px}.future h3{font-size:17px}}
 </style>
 </head>
 <body>
@@ -128,9 +138,9 @@ footer::before{content:"⌂  ♧  ⌂  ▥  ♧  ▤  ⌂  ♧  ⌂";display:blo
 <a class="card sns-card x" href="https://x.com/Yamaju1903" target="_blank" rel="noopener noreferrer">
 <img class="sns-icon" src="x.png" alt="" width="39" height="39"><h3>公式X</h3><p>最新の情報をいち早く</p><span class="arrow" aria-hidden="true">↗</span>
 </a>
-<div class="card sns-card youtube">
-<svg class="sns-icon" viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="7" width="38" height="26" rx="8" fill="#ed252a"/><path d="M17 14l11 6-11 6z" fill="white"/></svg><h3>公式YouTube</h3><p>動画で知る山十の仕事</p><span class="status">準備中</span>
-</div>
+<a class="card sns-card youtube" href="https://www.youtube.com/@山十株式会社" target="_blank" rel="noopener noreferrer">
+<svg class="sns-icon" viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="7" width="38" height="26" rx="8" fill="#ed252a"/><path d="M17 14l11 6-11 6z" fill="white"/></svg><h3>公式YouTube</h3><p>動画で知る山十の仕事</p><span class="arrow" aria-hidden="true">↗</span>
+</a>
 </div>
 </section>
 <section aria-labelledby="sites-title">
@@ -145,7 +155,7 @@ footer::before{content:"⌂  ♧  ⌂  ▥  ♧  ▤  ⌂  ♧  ⌂";display:blo
 <a class="card site-card mynavi" href="https://job.mynavi.jp/27/pc/search/corp277874/outline.html" target="_blank" rel="noopener noreferrer">
 <img class="site-icon" src="マイナビロゴ.png" alt="" width="62" height="62"><h3>マイナビ2027</h3><p>採用情報・エントリーはこちら</p><span class="arrow" aria-hidden="true">↗</span>
 </a>
-<div class="card site-card future"><span class="plus" aria-hidden="true">＋</span><div><h3>その他のサイト</h3><span class="status">追加予定</span></div></div>
+<a class="card site-card future" href="https://kitakyushu-mado.com/" target="_blank" rel="noopener noreferrer"><div><span class="site-label">WINDOW REFORM</span><h3>北九州窓リフォーム相談室</h3><p>戸建てからビル・マンション・アパートなどの【窓・ガラス・玄関ドア】などのお悩みはこちらから</p></div><span class="arrow" aria-hidden="true">↗</span></a>
 </div>
 </section>
 </main>
