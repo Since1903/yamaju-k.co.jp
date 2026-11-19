@@ -140,6 +140,12 @@ footer::before{content:"⌂  ♧  ⌂  ▥  ♧  ▤  ⌂  ♧  ⌂";display:blo
 .mynavi h3,.mynavi p{margin-left:0;text-align:left}
 .mynavi .site-icon{display:none}
 @media(max-width:700px){.mynavi{padding:23px}}
+
+/* Definitive Mynavi layout: left text, watermark only on right */
+.site-grid > a.mynavi{position:relative;min-height:150px;padding:27px 30px!important;display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;text-align:left!important;background:linear-gradient(90deg,#fff 0%,#fffffffa 45%,#ffffffcf 72%,#ffffffb3 100%),url("マイナビロゴ.png") right 18px center/auto 115% no-repeat,#f2f9ff!important}
+.site-grid > a.mynavi > h3,.site-grid > a.mynavi > p{position:relative;z-index:1;align-self:flex-start!important;text-align:left!important;margin-left:0!important;padding-left:0!important;width:auto!important;max-width:calc(100% - 42px)}
+.site-grid > a.mynavi > .site-icon{display:none!important}
+@media(max-width:700px){.site-grid > a.mynavi{padding:23px!important;background-size:auto,auto 95%!important;background-position:center,right 12px center!important}}
 </style>
 </head>
 <body>
