@@ -85,6 +85,27 @@ section{margin-bottom:28px}
 .future{min-height:104px}
 }
 @media(prefers-reduced-motion:reduce){a.card{transition:none}a.card:hover{transform:none}}
+
+/* Reference-inspired card artwork and finishing details */
+.sns-card::before{content:"";position:absolute;right:0;top:0;width:43%;height:43%;background:linear-gradient(225deg,#ffffff1a 0 49%,#ffffff70 50% 100%);pointer-events:none}
+.sns-card h3{font-weight:800;letter-spacing:-.035em;color:#111}
+.sns-card .sns-icon{width:52px;height:52px;margin-bottom:12px}
+.instagram{background:linear-gradient(132deg,#fff 0%,#fff8fc 54%,#f6c6e9 100%)}
+.facebook{background:linear-gradient(132deg,#fff 0%,#f6fbff 54%,#c0ddff 100%)}
+.x{background:linear-gradient(132deg,#fff 0%,#f8fbfa 54%,#c3ded7 100%)}
+.youtube{background:linear-gradient(132deg,#fff 0%,#fff9f8 54%,#ffc9cb 100%)}
+.site-card{isolation:isolate}
+.site-card::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none}
+.official{background:linear-gradient(90deg,#fff 0%,#fffffff5 35%,#ffffff00 95%),url("yamaju-sunny.webp") center 46%/cover}
+.recruit{background:linear-gradient(90deg,#fff 0%,#ffffffec 42%,#ffffff55 75%),url("pr.png") right center/auto 100% no-repeat,#e4f1ed}
+.recruit .site-icon{width:54px;height:54px;right:25px;top:20px;opacity:.92}
+.mynavi{background:linear-gradient(95deg,#fff 0%,#ffffffed 52%,#9bcbed70 100%),url("yamaju-sunny.webp") center 65%/cover}
+.future{background:linear-gradient(120deg,#fafffd,#e1f2ec);border:2px dashed #79c9ae}
+.future::after{content:"";position:absolute;right:48px;top:50%;transform:translateY(-50%);width:94px;height:68px;border:5px solid #a3cec1;border-radius:10px;opacity:.7;box-shadow:18px 13px 0 -6px #e5f4ee,18px 13px 0 -1px #a3cec1;pointer-events:none}
+.future .status{background:#006a50;color:white}
+footer{position:relative;padding-top:46px;background:linear-gradient(180deg,transparent,#003e32 80%)}
+footer::before{content:"⌂  ♧  ⌂  ▥  ♧  ▤  ⌂  ♧  ⌂";display:block;margin-bottom:14px;font-size:25px;letter-spacing:.35em;color:#d8eee5;opacity:.9}
+@media(max-width:700px){.sns-card .sns-icon{width:42px;height:42px}.future::after{width:65px;height:48px;right:34px}footer::before{font-size:16px;letter-spacing:.15em}.recruit{background-size:auto,auto 100%}}
 </style>
 </head>
 <body>
@@ -99,16 +120,16 @@ section{margin-bottom:28px}
 <div class="section-heading"><h2 id="sns-title">公式SNS</h2><span>SOCIAL MEDIA</span></div>
 <div class="grid sns-grid">
 <a class="card sns-card instagram" href="https://www.instagram.com/yamaju1903/" target="_blank" rel="noopener noreferrer">
-<img class="sns-icon" src="insta.png" alt="" width="39" height="39"><h3>Instagram</h3><p>山十の日常・取り組みを発信</p><span class="arrow" aria-hidden="true">↗</span>
+<img class="sns-icon" src="insta.png" alt="" width="39" height="39"><h3>公式Instagram</h3><p>山十の日常・取り組みを発信</p><span class="arrow" aria-hidden="true">↗</span>
 </a>
 <a class="card sns-card facebook" href="https://www.facebook.com/Yamaju1903" target="_blank" rel="noopener noreferrer">
-<img class="sns-icon" src="fb.png" alt="" width="39" height="39"><h3>Facebook</h3><p>お知らせ・イベント情報</p><span class="arrow" aria-hidden="true">↗</span>
+<img class="sns-icon" src="fb.png" alt="" width="39" height="39"><h3>公式Facebook</h3><p>お知らせ・イベント情報</p><span class="arrow" aria-hidden="true">↗</span>
 </a>
 <a class="card sns-card x" href="https://x.com/Yamaju1903" target="_blank" rel="noopener noreferrer">
-<img class="sns-icon" src="x.png" alt="" width="39" height="39"><h3>X</h3><p>最新の情報をいち早く</p><span class="arrow" aria-hidden="true">↗</span>
+<img class="sns-icon" src="x.png" alt="" width="39" height="39"><h3>公式X</h3><p>最新の情報をいち早く</p><span class="arrow" aria-hidden="true">↗</span>
 </a>
 <div class="card sns-card youtube">
-<svg class="sns-icon" viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="7" width="38" height="26" rx="8" fill="#ed252a"/><path d="M17 14l11 6-11 6z" fill="white"/></svg><h3>YouTube</h3><p>動画で知る山十の仕事</p><span class="status">準備中</span>
+<svg class="sns-icon" viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="7" width="38" height="26" rx="8" fill="#ed252a"/><path d="M17 14l11 6-11 6z" fill="white"/></svg><h3>公式YouTube</h3><p>動画で知る山十の仕事</p><span class="status">準備中</span>
 </div>
 </div>
 </section>
