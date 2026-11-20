@@ -104,7 +104,7 @@ section{margin-bottom:28px}
 .future::after{content:"";position:absolute;right:48px;top:50%;transform:translateY(-50%);width:94px;height:68px;border:5px solid #a3cec1;border-radius:10px;opacity:.7;box-shadow:18px 13px 0 -6px #e5f4ee,18px 13px 0 -1px #a3cec1;pointer-events:none}
 .future .status{background:#006a50;color:white}
 footer{position:relative;padding-top:46px;background:linear-gradient(180deg,transparent,#003e32 80%)}
-footer::before{content:"⌂  ♧  ⌂  ▥  ♧  ▤  ⌂  ♧  ⌂";display:block;margin-bottom:14px;font-size:25px;letter-spacing:.35em;color:#d8eee5;opacity:.9}
+footer::before{content:none;display:none}
 @media(max-width:700px){.sns-card .sns-icon{width:42px;height:42px}.future::after{width:65px;height:48px;right:34px}footer::before{font-size:16px;letter-spacing:.15em}.recruit{background-size:auto,auto 100%}}
 
 /* November link updates */
@@ -146,6 +146,7 @@ footer::before{content:"⌂  ♧  ⌂  ▥  ♧  ▤  ⌂  ♧  ⌂";display:blo
 .site-grid > a.mynavi > h3,.site-grid > a.mynavi > p{position:relative;z-index:1;align-self:flex-start!important;text-align:left!important;margin-left:0!important;padding-left:0!important;width:auto!important;max-width:calc(100% - 42px)}
 .site-grid > a.mynavi > .site-icon{display:none!important}
 @media(max-width:700px){.site-grid > a.mynavi{padding:23px!important;background-size:auto,auto 95%!important;background-position:center,right 12px center!important}}
+.footer-town{display:block;width:min(520px,88%);height:auto;margin:0 auto 14px;overflow:visible}footer{padding-top:32px}@media(max-width:700px){.footer-town{width:94%;margin-bottom:12px}}
 </style>
 </head>
 <body>
@@ -189,6 +190,6 @@ footer::before{content:"⌂  ♧  ⌂  ▥  ♧  ▤  ⌂  ♧  ⌂";display:blo
 </div>
 </section>
 </main>
-<footer><p>山十株式会社</p><small>© 2026 YAMAJU Co., Ltd. All Rights Reserved.</small></footer>
+<footer><svg class="footer-town" viewBox="0 0 720 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="家々と木々が並ぶ街並みの線画"><g fill="none" stroke="#9be4cb" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 110V85l8-14 9 14v25M15 75V60l9-15 9 15v50M24 88l-8 12M44 110V78l13-9 14 9v32M51 79V67l15-12 14 12v43M90 110V72l37-23 38 23v38M101 73l26-15 27 15M110 110V88h18v22M139 85h11v11h-11M177 110V39h45v71M183 39V30h33v9M188 49h9v14h-9M205 49h9v14h-9M188 72h9v14h-9M205 72h9v14h-9M188 94h9v16h-9M205 94h9v16h-9M238 110V73l42-24 42 24v37M246 73l34-18 34 18M254 89h16v21h-16M284 88h15v14h-15M336 110V83l25-17 25 17v27M346 86h11v13h-11M368 87h10v12h-10M395 110V74l28-17 29 17v36M407 82h13v13h-13M431 82h11v13h-11M465 110V86l13-12 14 12v24M476 77V62l-6-12 7-12 8 12-5 12M503 110V72l22-18 24 18v38M511 75h13v14h-13M531 77h11v13h-11M561 110V36l43-7 5 81M571 45l26-4M574 58l23-3M576 72l23-3M579 85l21-2M581 98l20-2M622 110V65l33-21 37 22v44M634 68l22-14 24 15M642 85h13v25h-13M670 83h11v13h-11M7 111h687"/><path d="M42 110V92M58 110V89M480 110V91M466 99l12 6 14-6"/></g></svg><p>山十株式会社</p><small>© 2026 YAMAJU Co., Ltd. All Rights Reserved.</small></footer>
 </body>
 </html>
